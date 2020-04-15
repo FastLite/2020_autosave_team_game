@@ -1475,6 +1475,7 @@ GameObject:
   - component: {fileID: 638933457}
   - component: {fileID: 638933466}
   - component: {fileID: 638933467}
+  - component: {fileID: 638933468}
   m_Layer: 0
   m_Name: MainStory
   m_TagString: Untagged
@@ -1572,7 +1573,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 334.49005, y: -106.7583}
+  scrollPos: {x: -101.49587, y: -146.55064}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -1583,7 +1584,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 638933293}
   selectedCommands: []
   variables: []
   description: 
@@ -1651,7 +1653,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 708.0256
     y: -5.686736
-    width: 126.12456
+    width: 124.74048
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1962,7 +1964,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 261.05002
     y: 99.76969
-    width: 141.6955
+    width: 144.11765
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2018,7 +2020,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 29.238525
     y: 101.377205
-    width: 152.07611
+    width: 152.42213
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2295,6 +2297,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 638933468}
   - {fileID: 638933342}
   - {fileID: 638933341}
   - {fileID: 638933340}
@@ -2370,7 +2373,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 258.87048
     y: 169.76482
-    width: 124.394455
+    width: 124.74048
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2552,7 +2555,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 881.6394
     y: 98.58701
-    width: 120.93425
+    width: 121.97231
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3269,7 +3272,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 272.64743
     y: 402.68106
-    width: 145.1557
+    width: 145.50171
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3625,7 +3628,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -17.42337
     y: 267.54874
-    width: 124.394455
+    width: 126.12456
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3706,7 +3709,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1393.5565
     y: 385.83466
-    width: 172.83736
+    width: 174.56746
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3737,7 +3740,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1067.9174
     y: 283.9638
-    width: 146.8858
+    width: 148.26988
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3786,7 +3789,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 935.9071
     y: 284.01978
-    width: 122.66435
+    width: 126.12456
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4632,7 +4635,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 995.5946
     y: 231.97705
-    width: 155.53632
+    width: 157.95847
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4736,7 +4739,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1228.5354
     y: 279.03625
-    width: 157.26642
+    width: 157.95847
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4932,7 +4935,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1208.533
     y: 343.7419
-    width: 165.91693
+    width: 169.03113
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6239,6 +6242,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 220
+  indentLevel: 0
+  duration: 1
+  fadeOut: 1
+  targetView: {fileID: 1132180532}
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
+  targetCamera: {fileID: 1380951250}
+--- !u!114 &638933468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638933286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 437f9a4e3dbc647f9bdce95308418bff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 221
   indentLevel: 0
   duration: 1
   fadeOut: 1

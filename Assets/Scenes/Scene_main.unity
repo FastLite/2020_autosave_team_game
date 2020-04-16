@@ -2226,7 +2226,6 @@ GameObject:
   - component: {fileID: 638933346}
   - component: {fileID: 638933345}
   - component: {fileID: 638933364}
-  - component: {fileID: 638933363}
   - component: {fileID: 638933344}
   - component: {fileID: 638933367}
   - component: {fileID: 638933365}
@@ -2447,6 +2446,12 @@ GameObject:
   - component: {fileID: 638933575}
   - component: {fileID: 638933574}
   - component: {fileID: 638933486}
+  - component: {fileID: 638933579}
+  - component: {fileID: 638933582}
+  - component: {fileID: 638933581}
+  - component: {fileID: 638933580}
+  - component: {fileID: 638933363}
+  - component: {fileID: 638933583}
   m_Layer: 0
   m_Name: MainStory
   m_TagString: Untagged
@@ -2562,11 +2567,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -622.0566, y: -218.92468}
+  scrollPos: {x: 198.52594, y: 280.2358}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 573
-  zoom: 0.7112499
+  zoom: 0.43
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -2643,7 +2648,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 634.3908
     y: -24.407495
-    width: 124.51671
+    width: 126.74419
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2954,7 +2959,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 261.05002
     y: 99.76969
-    width: 142.79439
+    width: 144.18604
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3010,7 +3015,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 29.238525
     y: 101.377205
-    width: 152.63623
+    width: 153.48837
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3278,7 +3283,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 686.2495
     y: 364.12015
-    width: 187.78561
+    width: 190.69768
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3363,7 +3368,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 258.87048
     y: 169.76482
-    width: 124.51671
+    width: 125.58139
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3517,7 +3522,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 659.0634
     y: 97.818794
-    width: 200.43939
+    width: 204.65115
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3546,7 +3551,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 881.6394
     y: 98.58701
-    width: 121.70476
+    width: 122.093025
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4273,7 +4278,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 272.64743
     y: 402.68106
-    width: 145.60634
+    width: 146.51163
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4347,6 +4352,9 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 638933364}
+  - {fileID: 638933582}
+  - {fileID: 638933581}
+  - {fileID: 638933580}
   - {fileID: 638933363}
   suppressAllAutoSelections: 0
 --- !u!114 &638933357
@@ -4528,18 +4536,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 638933286}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 98
+  itemId: 366
   indentLevel: 0
-  targetFlowchart: {fileID: 638933290}
+  text: Leave room.
+  description: 
   targetBlock: {fileID: 638933354}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
 --- !u!114 &638933364
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -4554,7 +4566,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 97
   indentLevel: 0
-  storyText: 'The door is locked... '
+  storyText: The door is unlocked so you quitely head inside.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -4636,7 +4648,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -17.42337
     y: 267.54874
-    width: 124.51671
+    width: 126.74419
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4715,9 +4727,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 1035.7815
-    y: 473.35892
-    width: 175.13184
+    x: 1037.5056
+    y: 475.08307
+    width: 174.41861
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4752,7 +4764,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1213.5281
     y: 250.17014
-    width: 149.82428
+    width: 147.67441
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4801,7 +4813,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 867.9197
     y: 209.12474
-    width: 124.51671
+    width: 124.4186
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5355,7 +5367,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 142
   indentLevel: 0
-  storyText: But there isn't anything here.
+  storyText: You find an emtpy pack of cigarettes in a waste basket.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -5549,7 +5561,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 145
   indentLevel: 0
-  storyText: You notice an opened crate and a large keg shelf that seems oddly out
+  storyText: You notice an opened crate and two large shelves that seems oddly out
     of place.
   description: 
   character: {fileID: 0}
@@ -5598,7 +5610,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 153
   indentLevel: 0
-  text: Investigate the shelf.
+  text: Investigate empty shelf.
   description: 
   targetBlock: {fileID: 638933371}
   hideIfVisited: 0
@@ -5650,7 +5662,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1054.2319
     y: 204.91577
-    width: 156.85416
+    width: 159.30232
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5755,7 +5767,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1376.5929
     y: 254.05693
-    width: 156.85416
+    width: 160.46512
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5804,8 +5816,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 176
   indentLevel: 1
-  storyText: As you climb back down the ladder, you hear a noise come from behind
-    another shelf.
+  storyText: As you return to the cellar, you hear a noise coming behind the shelf
+    filled with bottles.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -5941,7 +5953,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1305.2698
     y: 170.22954
-    width: 166.69598
+    width: 169.76744
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6130,7 +6142,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 1232.4225
-    y: 588.99756
+    y: 587.99756
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -6212,8 +6224,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 178
   indentLevel: 1
-  storyText: Looks like it was recently moved. Seems like this shelf is used to hide
-    something aswell.
+  storyText: Upon a closer look you notice the shelf was recently moved.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -6323,7 +6334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 187
   indentLevel: 0
-  storyText: '"You two cannibals!?"'
+  storyText: '"You two are cannibals!?"'
   description: 
   character: {fileID: 1880524078}
   portrait: {fileID: 0}
@@ -6717,7 +6728,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 1236.3177
+    x: 1238.4917
     y: 668.50977
     width: 120
     height: 40
@@ -6728,8 +6739,8 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 638933445}
   - {fileID: 638933573}
+  - {fileID: 638933445}
   - {fileID: 638933537}
   - {fileID: 638933535}
   - {fileID: 638933495}
@@ -6744,12 +6755,14 @@ MonoBehaviour:
   - {fileID: 638933459}
   - {fileID: 638933460}
   - {fileID: 638933461}
+  - {fileID: 638933484}
+  - {fileID: 638933288}
+  - {fileID: 638933583}
   - {fileID: 638933462}
+  - {fileID: 638933579}
   - {fileID: 638933463}
   - {fileID: 638933464}
-  - {fileID: 638933484}
   - {fileID: 638933483}
-  - {fileID: 638933288}
   - {fileID: 638933457}
   suppressAllAutoSelections: 0
 --- !u!114 &638933448
@@ -6766,7 +6779,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 199
   indentLevel: 0
-  storyText: Quinn smashed his gun across Grim's head knocking him out...
+  storyText: Quinn smacks his gun across Grim's head knocking him out...
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -6930,7 +6943,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 193
   indentLevel: 0
-  storyText: Quinn pointing a gun at Grim
+  storyText: Quinn points a gun at Grim.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -8288,7 +8301,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 264
   indentLevel: 1
-  storyText: This door is locked, maybe I will be able to find keys somewhere.
+  storyText: Looks like a shelf filled with bottles...
   description: 
   character: {fileID: 1880524078}
   portrait: {fileID: 0}
@@ -8534,7 +8547,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 259
   indentLevel: 0
-  text: Investigate locked door
+  text: Investigate shelf filled with bottles.
   description: 
   targetBlock: {fileID: 638933370}
   hideIfVisited: 0
@@ -8833,8 +8846,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 1661.8157
-    y: 442.35873
-    width: 142.79439
+    y: 440.03314
+    width: 144.18604
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9185,7 +9198,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 603.5675
     y: 432.90033
-    width: 145.60634
+    width: 146.51163
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9405,7 +9418,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1226.5342
     y: 857.25903
-    width: 139.98244
+    width: 139.53488
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9660,7 +9673,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1077.1837
     y: 145.6662
-    width: 124.51671
+    width: 124.4186
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10077,7 +10090,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -319.00433
     y: 452.55603
-    width: 138.57646
+    width: 139.53488
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10423,11 +10436,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 437.09024
     y: 432.50995
-    width: 165.29001
+    width: 165.11627
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
-  itemId: 305
+  itemId: 361
   blockName: StopAllMusic (Copy)
   description: 
   eventHandler: {fileID: 0}
@@ -10438,6 +10451,132 @@ MonoBehaviour:
   - {fileID: 638933574}
   - {fileID: 638933486}
   suppressAllAutoSelections: 0
+--- !u!114 &638933579
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638933286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 362
+  indentLevel: 0
+  display: 1
+  stage: {fileID: 0}
+  character: {fileID: 1156383018}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 21300000, guid: cc172288b5991de4aa5411205266a16a, type: 3}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 0}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
+--- !u!114 &638933580
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638933286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 365
+  indentLevel: 0
+  storyText: But there isn't anything here.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &638933581
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638933286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 364
+  indentLevel: 0
+  storyText: You take a look over the room for clues...
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &638933582
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638933286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 437f9a4e3dbc647f9bdce95308418bff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 363
+  indentLevel: 0
+  duration: 1
+  fadeOut: 1
+  targetView: {fileID: 969569299}
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
+  targetCamera: {fileID: 1380951250}
+--- !u!114 &638933583
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638933286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 437f9a4e3dbc647f9bdce95308418bff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 367
+  indentLevel: 0
+  duration: 1
+  fadeOut: 1
+  targetView: {fileID: 1132180532}
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
+  targetCamera: {fileID: 1380951250}
 --- !u!1 &744095508
 GameObject:
   m_ObjectHideFlags: 0
